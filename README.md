@@ -26,6 +26,7 @@ A real-time API monitoring service with HTTP and WebSocket support. Sends email 
    ```text
    SMTP_EMAIL="yourgooglemail@gmail.com"
    SMTP_PASSWORD="your_app_password"
+   SMTP_HOST="smtp.gmail.com" # This value is the default
    ```
 
    > **Note for Gmail users:** You need to use an [App Password](https://support.google.com/accounts/answer/185833), not your regular password.
