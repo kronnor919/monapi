@@ -37,3 +37,10 @@ class WebSocketSettings(MonitorSettings):
     def monitoring_interval_validator(cls, value: float):
         if value <= 0:
             raise ValidationError("monitoring_interval must be greater than 0")
+
+
+class SMTPSettings(BaseModel):
+    host: str
+    port: int
+    username: str
+    password: str
